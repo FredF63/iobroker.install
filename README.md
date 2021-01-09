@@ -32,7 +32,7 @@ folgende Komponenten benötigt:
 * Hardware auf der ioBroker laufen soll mit mindestens 2GB RAM
 
 
-**Betriebssystem **
+**Betriebssystem**
 
 Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***ohne*** Desktop zu installieren.
 
