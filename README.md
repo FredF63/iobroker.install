@@ -61,14 +61,12 @@ aufgerufen wird und die Zugangsdaten eingeben werden:
 	* Raspberry Pi: User "pi", Passwort "raspberry"
 	* ARM-SBC: ***Das fehlt noch***
 
-4. Aktualisierung des Systems 
-Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es mit dem Befehl 
-`sudo apt update && sudo apt upgrade` und anschließendem Enter aktualisiert werden. 
-Eventuell muss eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System 
-aktualisiert und auf dem neuesten Stand.
+4. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und 
+anschließendem Enter durchführen. Eventuell muss eine Bestätigung mit `y` erfolgen. 
+Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
-5. Systemkonfiguration Raspberry Pi
-Über dem Aufruf `sudo raspi-config` müssen einige **wichtige** Einstellungen vorgenommen werden.
+5. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi einige **wichtige** 
+Einstellungen vornehmen.
 	* **1 System Options:**	
 	S3 Password: auf eigenes ändern
     S4 Hostname: kann, muss aber nicht geändert werden
