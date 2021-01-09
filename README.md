@@ -39,7 +39,7 @@ Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***
 * für einen Raspberry Pi: https://www.raspberrypi.org/software/operating-systems/
 * für andere ARM-basierte Einplatinencomputer: https://www.armbian.com/download/
 
-### Installationsablauf SBC
+### Installationsablauf Raspberry Pi
 
 1. Das gewünschte Betriebssystem wird in der zum SBC passenden Version am PC heruntergeladen, 
 gegebenfalls entpackt und mit dem Schreibprogramm für SD-Karten auf die SD-Karte geschrieben.
@@ -58,8 +58,7 @@ erreichbar ist, diese dabei direkt an den SBC binden.
 3. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 
 aufgerufen wird und die Zugangsdaten eingeben werden:
 
-	* Raspberry Pi: User "pi", Passwort "raspberry"
-	* ARM-SBC: ***Das fehlt noch***
+	* User "pi", Passwort "raspberry"
 
 4. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und 
 anschließendem Enter durchführen. Eventuell muss eine Bestätigung mit `y` erfolgen. 
@@ -67,18 +66,29 @@ Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
 5. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi einige **wichtige** 
 Einstellungen vornehmen.
-	* **1 System Options:** S3 Password: auf eigenes ändern, **S4 Hostname:** kann, muss aber nicht geändert werden
+	* **1 System Options:** S3: neues Passwort vergeben
 	* **5 Localisation Options:** L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen. Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
 	* Konfigurator verlassen und System mit `sudo reboot` neustarten
-	* 
-	* Zeitzone 
-	* Sprache Servername. Danach nochmals rebooten mit `sudo reboot`
+	* Wieder über das Terminalprogramm verbinden, einloggen und erneut `sudo raspi-config` ausführen
+	* **5 Localisation Options:** L2 wählen und die Zeitzone `Europa` und `Berlin` wählen und mit Enter bestätigen
+	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.
+	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja mit Enter bestätigen.
+    
+6. Nach dem erneuten einloggen über das Terminalprogramm node.js und ioBroker mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installieren. Es wird die jeweils aktuell empfohlene node.js Version installiert.
 
-6. ARM-SBC
+### Installationsablauf ARM-SBC
+sdfasdf
+1. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 
+aufgerufen wird und die Zugangsdaten eingeben werden:
+
+	* Raspberry Pi: User "pi", Passwort "raspberry"
+	* ARM-SBC: ***Das fehlt noch***
+
+2. ARM-SBC
     Über dem Aufruf `sudo armbian-config` müssen einige Einstellungen vorgenommen werden.bzw.
     ***Diese Beschreibung fehlt noch***
 
-### Debian-PC
+### Installationsablauf Debian-PC
 * Das Betriebssystem wird auf einen Bootfähigen USB-Stick geschrieben.
 * Im BIOS wird
   * der Boot von USB aktiviert 
@@ -92,7 +102,7 @@ Auch hier sollte keine grafische Oberfläche installiert werden.
 4. User anlegen
 Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit `adduser UserName` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
 Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit `exit` ausloggen und eine neue Verbindung als User aufbauen.
-## Installation von node.js und ioBroker
+## 
 
 ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
 
@@ -101,4 +111,4 @@ Auf einem neuen System, auf dem sich noch kein node.js befindet wird dieses in d
 ---
 
 ## Nutzung von ioBroker
-Die erfolgreiche Installation endet mit der Information unter welcher IP ioBroker aufgerufen werden soll. Unter dieser <IP>:8081 ist die Bedienoberfläche (der Admin) von ioBroker in jedem Browser aufrufbar.
+Die erfolgreiche Installation endet mit der Information unter welcher IP ioBroker aufgerufen werden soll. Unter IP-ADRESSE:8081 ist die Bedienoberfläche (der Admin) von ioBroker in jedem Browser aufrufbar.
