@@ -42,7 +42,7 @@ Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***
 ### Installationsablauf SBC
 
 1. Das gewünschte Betriebssystem wird in der zum SBC passenden Version am PC heruntergeladen, 
-gegebenfalls entpackt und auf die SD-Karte geschrieben.
+gegebenfalls entpackt und mit dem Schreibprogramm für SD-Karten auf die SD-Karte geschrieben.
 > Beim Raspberry Pi muss nach dem Schreiben der SD-Karte noch auf der Bootpartition
 > eine leere Datei mit Namen `ssh` ohne Dateiendung angelegt werden. 
 > Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der 
@@ -52,7 +52,7 @@ gegebenfalls entpackt und auf die SD-Karte geschrieben.
 2. Die SD-Karte anschließend in den SBC stecken und den SBC mit dem Netzwerk und der 
 Stromversorgung verbinden.
 Nach kurzer Zeit ist der SBC hoch gefahren und im Netzwerk erreichbar. Im Router 
-nach dessen IP-Adresse suchen und damit der SBC immer mit der gleichen IP Adresse
+nach dessen IP-Adresse suchen und, damit der SBC immer mit der gleichen IP Adresse
 erreichbar ist, diese dabei direkt an den SBC binden.
 
 3. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 
@@ -61,22 +61,26 @@ aufgerufen wird und die Zugangsdaten eingeben werden:
 	* Raspberry Pi: User "pi", Passwort "raspberry"
 	* ARM-SBC: ***Das fehlt noch***
 
-4. Aktualisierung des Systems
+4. Aktualisierung des Systems 
 Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es mit dem Befehl 
 `sudo apt update && sudo apt upgrade` und anschließendem Enter aktualisiert werden. 
 Eventuell muss eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System 
 aktualisiert und auf dem neuesten Stand.
 
-5a. Systemkonfiguration Raspberry Pi
-
+5. Systemkonfiguration Raspberry Pi
 Über dem Aufruf `sudo raspi-config` müssen einige **wichtige** Einstellungen vorgenommen werden.
-* **1 System Options:**	
+	* **1 System Options:**	
 	S3 Password: auf eigenes ändern
     S4 Hostname: kann, muss aber nicht geändert werden
-* **5 Localisation Options:** 
-* Zeitzone Sprache Servername. Danach nochmals rebooten mit `sudo reboot`
+	* **5 Localisation Options:** 
+	L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen.
+    Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
+	* Konfigurator verlassen und System mit `sudo reboot` neustarten
+	* 
+	* Zeitzone 
+	* Sprache Servername. Danach nochmals rebooten mit `sudo reboot`
 
-5b. ARM-SBC
+6. ARM-SBC
     Über dem Aufruf `sudo armbian-config` müssen einige Einstellungen vorgenommen werden.bzw.
     ***Diese Beschreibung fehlt noch***
 
