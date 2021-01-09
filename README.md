@@ -4,31 +4,32 @@ Doku preview
 
 
 # Installation von ioBroker unter Linux
-Die Installation von ioBroker unter Linux ist auch für jeden Einsteiger zu schaffen!
+Vorbemerkungen:
+Die Installation ist auch für Einsteiger zu schaffen, die sich bisher wenig mit Linux beschäftigt haben!
 
-Bitte nicht von der Länge dieser Anleitung abschrecken lassen. Hier werden noch mehrere verschiedene Optionen beschrieben.
+Bitte nicht von der Länge dieser Anleitung abschrecken lassen - es werden hier verschiedene Möglichkeiten je nach verwendeter Hardware beschrieben.
 
-Im Prinzip besteht **jede** Installation nur aus zwei Schritten
+Im Prinzip besteht **jede** Installation aus nur zwei Schritten:
 * Installation eines Betriebssystems
-* Installation von node.js und ioBroker über `curl -sLf https://iobroker.net/install.sh | bash -`
+* gemeinsame Installation von node.js und ioBroker per Einzeiler
 
-Die weitere Verfahrensweise ist anschließend überall gleich.
+Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Hardware.
 
-### benötigte Software/Hardware
-Für die Installation und die spätere Administrierung des Systems werden noch folgende Komponenten benötigt:
-* SD-Card Reader
+## benötigte Software/Hardware
+Für die Installation und die spätere Administrierung des ioBroker Systems werden folgende Komponenten benötigt:
+* PC mit SD-Card Reader
+* SD Karte mit
 * Schreibprogramm für SD-Karten (z.B. Balena etcher oder https://rufus.ie/)
 * Terminalprogramm für SSH-Zugriff (z.B. puTTY)
 
 ## Betriebssysteme
-Als Betriebssystem sollte ein Serverbetriebssystem, basierend auf Debian ohne grafische Oberfläche installiert werden.
+Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***ohne*** grafische Oberfläche zu installieren.
 
-Empfohlene Betriebssysteme sind:
 * für einem (mini-) PC: https://www.debian.org/distrib/
 * für einen Raspberry Pi: https://www.raspberrypi.org/software/operating-systems/
 * für andere ARM-basierte Einplatinencomputer: https://www.armbian.com/download/
 
-### Einplatinencomputer (SBC)
+### Raspberry Pi und Einplatinencomputer (SBC)
 
 #### Vorbereitung
 Das gewünschte Betriebssystem wird in der zur Hardware passenden Version heruntergeladen und auf die SD-Karte geschrieben.
