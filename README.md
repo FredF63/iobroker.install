@@ -19,7 +19,7 @@ Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Ha
 
 
 
-## <details open>Raspberry Pi und Einplatinencomputer (kurz SBC)<p>
+## <details open><summary>Raspberry Pi und Einplatinencomputer (kurz SBC)</summary><p>
 
 **benötigte Software/Hardware**
 
