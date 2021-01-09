@@ -57,22 +57,26 @@ erreichbar ist, diese dabei direkt an den SBC binden.
 aufgerufen wird und die Zugangsdaten eingeben werden:
 
 	* Raspberry Pi: User "pi", Passwort "raspberry"
-	* ARM-SBC:
+	* ARM-SBC: ***Das fehlt noch***
 
 4. Aktualisierung des Systems
-Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es auf Aktualisierung 
-überprüft werden. Dies geschieht mit dem Befehl `sudo apt update && sudo apt upgrade`
-und anschließendem Enter. 
+Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es mit dem Befehl 
+`sudo apt update && sudo apt upgrade` und anschließendem Enter aktualisiert werden. 
 > Eventuell muss eine Bestätigung mit `y` erfolgen
 
-    Nach einiger Zeit ist das System auf dem neuesten Stand.
-5. Systemkonfiguration
-Über dem Aufruf `sudo raspi-config` (Pi) bzw. `sudo armbian-config` (ARM-SBC) werden
-wichtige Einstellungen wie z.B.
-* Zeitzone
-* Sprache
-* Servername
-eingestellt. Danach nochmals rebooten mit `sudo reboot`
+    Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
+
+5a. Systemkonfiguration Raspberry Pi
+Über dem Aufruf `sudo raspi-config` müssen einige **wichtige** Einstellungen vorgenommen werden.
+* **1 System Options:**	
+	S3 Password: auf eigenes ändern
+    S4 Hostname: kann, muss aber nicht geändert werden
+* **5 Localisation Options:** 
+* Zeitzone Sprache Servername. Danach nochmals rebooten mit `sudo reboot`
+
+5b. ARM-SBC
+    Über dem Aufruf `sudo armbian-config` müssen einige Einstellungen vorgenommen werden.bzw.
+    ***Diese Beschreibung fehlt noch***
 
 ### Debian-PC
 * Das Betriebssystem wird auf einen Bootfähigen USB-Stick geschrieben.
