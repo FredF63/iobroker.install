@@ -76,7 +76,7 @@ Einstellungen vornehmen.
     
 6. Nach dem erneuten einloggen über das Terminalprogramm node.js und ioBroker mit dem Befehl 
 `curl -sLf https://iobroker.net/install.sh | bash - ` 
-installieren. Es wird die jeweils aktuell empfohlene node.js Version installiert.
+installieren. Es wird die jeweils aktuell empfohlene node.js ==Version== installiert.
 
 ### Installationsablauf ARM-SBC
 sdfasdf
