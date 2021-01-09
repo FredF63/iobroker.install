@@ -68,6 +68,7 @@ Eventuell muss eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das Sys
 aktualisiert und auf dem neuesten Stand.
 
 5a. Systemkonfiguration Raspberry Pi
+
 Über dem Aufruf `sudo raspi-config` müssen einige **wichtige** Einstellungen vorgenommen werden.
 * **1 System Options:**	
 	S3 Password: auf eigenes ändern
