@@ -4,7 +4,7 @@ Doku preview
 
 
 # Installation von ioBroker unter Linux
----
+
 Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux 
 beschäftigt haben, ioBroker in kürzester Zeit zu installieren!
 
