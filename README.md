@@ -66,7 +66,7 @@ Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es mit dem Befehl
 `sudo apt update && sudo apt upgrade` und anschließendem Enter aktualisiert werden. 
 > Eventuell muss eine Bestätigung mit `y` erfolgen
 
-    Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
+Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
 5a. Systemkonfiguration Raspberry Pi
 Über dem Aufruf `sudo raspi-config` müssen einige **wichtige** Einstellungen vorgenommen werden.
