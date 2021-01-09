@@ -21,7 +21,7 @@ Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Ha
 
 ## Raspberry Pi und Einplatinencomputer (kurz SBC)
 
-** benötigte Software/Hardware**
+**benötigte Software/Hardware**
 
 Für die Installation und die spätere Administrierung des ioBroker Systems werden 
 folgende Komponenten benötigt:
@@ -32,7 +32,7 @@ folgende Komponenten benötigt:
 * Hardware auf der ioBroker laufen soll mit mindestens 2GB RAM
 
 
-** Betriebssystem **
+**Betriebssystem **
 
 Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***ohne*** Desktop zu installieren.
 
