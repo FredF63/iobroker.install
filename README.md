@@ -4,7 +4,7 @@ Doku preview
 
 
 # Installation von ioBroker unter Linux
-#### Vorbemerkungen:
+### Vorbemerkungen:
 Die Installation ist auch für Einsteiger zu schaffen, die sich bisher wenig mit Linux beschäftigt haben!
 
 Bitte nicht von der Länge dieser Anleitung abschrecken lassen - es werden hier verschiedene Möglichkeiten je nach verwendeter Hardware beschrieben.
@@ -15,32 +15,37 @@ Im Prinzip besteht **jede** Installation aus nur zwei Schritten:
 
 Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Hardware.
 
-## benötigte Software/Hardware
+#### benötigte Software/Hardware
 Für die Installation und die spätere Administrierung des ioBroker Systems werden folgende Komponenten benötigt:
 * PC mit SD-Card Reader
 * SD Karte mit
 * Schreibprogramm für SD-Karten (z.B. Balena etcher oder https://rufus.ie/)
 * Terminalprogramm für SSH-Zugriff (z.B. puTTY)
+* Hardware auf der ioBroker laufen soll
 
-## Betriebssysteme
+#### Betriebssystem
 Es wird empfohlen ein Debian basierendes Betriebssystem als **Server**, also ***ohne*** grafische Oberfläche zu installieren.
 
 * für einem (mini-) PC: https://www.debian.org/distrib/
 * für einen Raspberry Pi: https://www.raspberrypi.org/software/operating-systems/
 * für andere ARM-basierte Einplatinencomputer: https://www.armbian.com/download/
 
-### Raspberry Pi und Einplatinencomputer (SBC)
+## Raspberry Pi (Pi) und Einplatinencomputer (SBC)
 
-#### Vorbereitung
+### Vorbereitung
 Das gewünschte Betriebssystem wird in der zur Hardware passenden Version heruntergeladen und auf die SD-Karte geschrieben.
 
-(Bei Raspberry OS muss nach dem Schreiben der SD-Karte noch auf der Bootpartition eine leere Datei mit Namen `ssh` angelegt werden. Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der Bezeichnung `Boot` eine neue Textdatei anlegen und die Endung `.txt` löschen, auch wenn Windows eine Meldung bringt.)
+> Beim Pi muss nach dem Schreiben der SD-Karte noch auf der Bootpartition eine 
+> leere Datei mit Namen `ssh` ohne Dateiendung angelegt werden. 
+> Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der 
+> Bezeichnung `Boot` eine neue Textdatei anlegen und die Endung `.txt` löschen, 
+> auch wenn Windows eine Meldung bringt.
 
 Die SD-Karte wird in den Einplatinencomputer gesteckt, der Computer mit dem Netzwerk und mit der Stromversorgung verbunden.
 
 Nach kurzer Zeit ist der SBC im Netzwerk erreichbar. Im Router nach der IP-Adresse sehen, und diese dabei direkt an den SBC binden.
 
-#### Verbindung vom PC zum SBC über Terminalprogramm
+### Verbindung vom PC zum SBC über Terminalprogramm
 * Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 aufgerufen wird.
 * Die Zugangsdaten eingeben
 
