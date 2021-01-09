@@ -5,9 +5,11 @@ Doku preview
 
 # Installation von ioBroker unter Linux
 ---
-Die Installationsanleitung hilft auch Einsteigern, die sich bisher wenig mit Linux beschäftigt haben!
+Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux 
+beschäftigt haben, ioBroker in kürzester Zeit zu installieren!
 
-Bitte nicht von der Länge dieser Anleitung abschrecken lassen - es werden hier verschiedene Möglichkeiten je nach verwendeter Hardware beschrieben.
+Bitte nicht von der Länge dieser Anleitung abschrecken lassen - es werden hier 
+verschiedene Möglichkeiten je nach verwendeter Hardware beschrieben.
 
 Im Prinzip besteht **jede** Installation aus nur zwei Schritten:
 * Installation eines Betriebssystems
@@ -20,7 +22,8 @@ Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Ha
 ## Raspberry Pi und Einplatinencomputer (kurz SBC)
 
 ** benötigte Software/Hardware**
-Für die Installation und die spätere Administrierung des ioBroker Systems werden folgende Komponenten benötigt:
+Für die Installation und die spätere Administrierung des ioBroker Systems werden 
+folgende Komponenten benötigt:
 * PC mit SD-Card Reader
 * SD Karte (idealerweise Application Class 2 (A2) mit mind. 32GB)
 * Schreibprogramm für SD-Karten (z.B. Balena etcher oder https://rufus.ie/)
@@ -47,30 +50,29 @@ gegebenfalls entpackt und auf die SD-Karte geschrieben.
 2. Die SD-Karte anschließend in den SBC stecken und den SBC mit dem Netzwerk und der 
 Stromversorgung verbinden.
 Nach kurzer Zeit ist der SBC hoch gefahren und im Netzwerk erreichbar. Im Router 
-nach dessen IP-Adresse suchen, und diese dabei direkt an den SBC binden.
+nach dessen IP-Adresse suchen und damit der SBC immer mit der gleichen IP Adresse
+erreichbar ist, diese dabei direkt an den SBC binden.
 
-3. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 aufgerufen wird und die Zugangsdaten eingeben
+3. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 
+aufgerufen wird und die Zugangsdaten eingeben werden:
 
-#### Einrichtung und Aktualisierung des Systems
-##### User anlegen
-Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit `adduser UserName` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
+	* Raspberry Pi: User "pi", Passwort "raspberry"
+	* ARM-SBC:
 
-Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit `exit` ausloggen und eine neue Verbindung als User aufbauen.
+4. Aktualisierung des Systems
+Auch wenn das Betriebssystem neu heruntergeladen wurde, sollte es auf Aktualisierung 
+überprüft werden. Dies geschieht mit dem Befehl `sudo apt update && sudo apt upgrade`
+und anschließendem Enter. 
+> Eventuell muss eine Bestätigung mit `y` erfolgen
 
-##### Aktualisierung des Systems
-Auch wenn das Betriebssystem neu heruntergeladen wurde sollte es auf Aktualisierung überprüft werden. Dies geschieht mit `sudo apt update && sudo apt upgrade`
-
-Anschließend noch bestätigen.
-
-Nach einiger Zeit ist das System auf dem neuesten Stand.
-
-##### Konfiguration des Systems
-Wichtige Einstellungen wie z.B.
+    Nach einiger Zeit ist das System auf dem neuesten Stand.
+5. Systemkonfiguration
+Über dem Aufruf `sudo raspi-config` (Pi) bzw. `sudo armbian-config` (ARM-SBC) werden
+wichtige Einstellungen wie z.B.
 * Zeitzone
 * Sprache
 * Servername
-müssen über dem Aufruf `sudo raspi-config` bzw. `sudo armbian-config` eingestellt werden.
-Danach nochmals rebooten mit `sudo reboot`
+eingestellt. Danach nochmals rebooten mit `sudo reboot`
 
 ### Debian-PC
 * Das Betriebssystem wird auf einen Bootfähigen USB-Stick geschrieben.
@@ -83,7 +85,9 @@ Anschließend vom USB-Stick booten und der geführten Installation folgen.
 Auch hier sollte keine grafische Oberfläche installiert werden.
 
 * für einem (mini-) PC: https://www.debian.org/distrib/
-
+4. User anlegen
+Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit `adduser UserName` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
+Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit `exit` ausloggen und eine neue Verbindung als User aufbauen.
 ## Installation von node.js und ioBroker
 
 ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
