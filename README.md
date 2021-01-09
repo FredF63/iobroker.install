@@ -67,12 +67,8 @@ Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
 5. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi einige **wichtige** 
 Einstellungen vornehmen.
-	* **1 System Options:**	
-	S3 Password: auf eigenes ändern
-    S4 Hostname: kann, muss aber nicht geändert werden
-	* **5 Localisation Options:** 
-	L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen.
-    Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
+	* **1 System Options:** S3 Password: auf eigenes ändern, **S4 Hostname:** kann, muss aber nicht geändert werden
+	* **5 Localisation Options:** L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen. Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
 	* Konfigurator verlassen und System mit `sudo reboot` neustarten
 	* 
 	* Zeitzone 
