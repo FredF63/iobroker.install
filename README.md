@@ -66,9 +66,9 @@ Einstellungen vornehmen.
 	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.
 	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja mit Enter bestätigen.
     
-7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Befehl 
-`curl -sLf https://iobroker.net/install.sh | bash - ` 
-node.js in der jeweils aktuell empfohlene Version ++und++ ioBroker installiert.
+7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Befehl  
+`curl -sLf https://iobroker.net/install.sh | bash - `  
+node.js in der jeweils aktuell empfohlene Version ***und*** ioBroker installiert.
 
 
 ## Installationsablauf ARM-SBC
