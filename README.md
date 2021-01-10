@@ -32,7 +32,7 @@ folgende Komponenten benötigt:
 
 ## Installationsablauf Raspberry Pi
 
-1. Die Version **Raspberry Pi OS Lite** von https://www.raspberrypi.org/software/operating-systems/ 
+1. Die Version **Raspberry Pi OS Lite** von https://www.raspberrypi.org/software/operating-systems/  
 herunter laden, entpacken und mit dem Schreibprogramm für SD-Karten auf die SD-Karte schreiben.
 
 2. Beim Raspberry Pi muss nach dem Schreiben der SD-Karte noch auf der Bootpartition
@@ -67,9 +67,7 @@ Einstellungen vornehmen.
 	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja mit Enter bestätigen.
     
 7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Befehl  
-
 `curl -sLf https://iobroker.net/install.sh | bash - `  
-
 node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
 
 
