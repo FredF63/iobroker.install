@@ -36,6 +36,7 @@ folgende Komponenten benötigt:
 1. Die Version **Raspberry Pi OS Lite** von https://www.raspberrypi.org/software/operating-systems/ herunter laden, entpacken und mit dem Schreibprogramm für SD-Karten auf die SD-Karte schreiben.
 
 2. Beim Raspberry Pi muss nach dem Schreiben der SD-Karte noch auf der Bootpartition eine leere Datei mit Namen `ssh` ohne Dateiendung angelegt werden. Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der Bezeichnung `Boot` eine neue Textdatei anlegen und die Endung `.txt` löschen, auch wenn Windows eine Meldung bringt.
+> ohne diese Datei ist der Pi später nicht über das Terminalprogramm erreichbar!
 
 3. Die SD-Karte anschließend in den Pi stecken und den Pi mit dem Netzwerk und der Stromversorgung verbinden. Nach kurzer Zeit ist der Pi hoch gefahren und im Netzwerk erreichbar. Im Router nach dessen IP-Adresse suchen und, damit der Pi immer mit der gleichen IP Adresse erreichbar ist, diese dabei direkt an den Pi binden.
 
@@ -45,15 +46,14 @@ folgende Komponenten benötigt:
 
 5. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und anschließendem Enter durchführen. Eventuell muss noch eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
-6. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi einige **wichtige** Einstellungen vornehmen.
-	* **1 System Options:** S3: neues Passwort vergeben
+6. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi folgende **wichtige** Einstellungen vornehmen.
+	* **1 System Options:** S3 wählen und neues Passwort vergeben
 	* **5 Localisation Options:** L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen. Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
-	* Konfigurator verlassen und System mit `sudo reboot` neustarten
-	* Wieder über das Terminalprogramm verbinden, einloggen und erneut `sudo raspi-config` ausführen
+	* Konfigurator verlassen und System mit `sudo reboot` den Pi neustarten
+	* Wieder über das Terminalprogramm verbinden, mit neuem Passwort einloggen und erneut `sudo raspi-config` ausführen
 	* **5 Localisation Options:** L2 wählen und die Zeitzone `Europa` und `Berlin` wählen und mit Enter bestätigen
-	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.
-	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja mit Enter bestätigen.
-    
+	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.  
+	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja und Enter bestätigen.
 7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Befehl  
 `curl -sLf https://iobroker.net/install.sh | bash - `  
 node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
