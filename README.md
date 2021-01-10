@@ -10,10 +10,12 @@ Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux be
 ioBroker funktioniert auf vielen Linux Distributionen, dennoch wird  ein Debian basiertes Betriebssystem empfohlen.  
 Da ioBroker über Browser oder Terminal administriert wird, sollte das Betriebssystem als **Server**, also ***ohne*** Desktop installiert werden.
 
-Als Hardware kann ein Raspberry Pi, ein ARM-basierter Einplatinencomputer oder jeder Linux fähige PC genutzt werden.  
-> Der Arbeitsspeicher sollte jedoch mindestens 2GB betragen.
+Als Hardware kann ein Raspberry Pi, ein ARM-basierter Einplatinencomputer oder jeder Linux fähige PC mit Netzwerkanschluß genutzt werden.  
+> Der Arbeitsspeicher sollte mindestens 2GB betragen.  
 
-Im Prinzip besteht dann **jede** Installation aus einfachen Schritten:
+> Aus performancegründen sollte die Anbindung ins Netzwerk per LAN erfolgen
+
+Im Prinzip besteht dann **jede** Installation aus sehr einfachen Schritten:
 * Installation eines Betriebssystems und anschließender Anpassung
 * gemeinsame Installation von node.js und ioBroker per Einzeiler
 ---
@@ -41,7 +43,7 @@ folgende Komponenten benötigt:
 
 	* User "pi", Passwort "raspberry"
 
-5. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und anschließendem Enter durchführen. Eventuell muss eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
+5. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und anschließendem Enter durchführen. Eventuell muss noch eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
 6. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi einige **wichtige** Einstellungen vornehmen.
 	* **1 System Options:** S3: neues Passwort vergeben
