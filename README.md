@@ -46,17 +46,17 @@ folgende Komponenten benötigt:
 
 5. Systemaktualisierung mit dem Befehl `sudo apt update && sudo apt upgrade` und anschließendem Enter durchführen. Eventuell muss noch eine Bestätigung mit `y` erfolgen. Nach einiger Zeit ist das System aktualisiert und auf dem neuesten Stand.
 
-6. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi folgende **wichtige** Einstellungen vornehmen.
+6. Über dem Aufruf `sudo raspi-config` am  Raspberry Pi folgende **wichtige** Einstellungen vornehmen:
 	* **1 System Options:** S3 wählen und neues Passwort vergeben
 	* **5 Localisation Options:** L1 wählen und zu `de_DE.UTF-8 UTF-8` scrollen, mit Leertaste auswählen und `ok` bestätigen. Anschließend noch `de_DE.UTF-8` wählen und mit `ok` bestätigen.
 	* Konfigurator verlassen und System mit `sudo reboot` den Pi neustarten
 	* Wieder über das Terminalprogramm verbinden, mit neuem Passwort einloggen und erneut `sudo raspi-config` ausführen
 	* **5 Localisation Options:** L2 wählen und die Zeitzone `Europa` und `Berlin` wählen und mit Enter bestätigen
-	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.  
-	Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja und Enter bestätigen.
-7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Befehl  
+	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.   Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja und Enter bestätigen.
+
+7. Nach dem erneuten einloggen über das Terminalprogramm wird node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker mit dem Einzeiler  
 `curl -sLf https://iobroker.net/install.sh | bash - `  
-node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
+ installiert.
 
 
 ## Installationsablauf ARM-SBC
