@@ -56,7 +56,9 @@ folgende Komponenten benötigt:
 
 7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Einzeiler  
 `curl -sLf https://iobroker.net/install.sh | bash - `  
- sowohl node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
+sowohl node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.  
+
+Die erfolgreiche ioBroker Installation endet mit der Information unter welcher IP ioBroker aufgerufen werden kann. Unter http://IP-ADRESSE:8081 kann nun ioBroker genutzt werden.
 
 
 ## Installationsablauf ARM-SBC
