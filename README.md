@@ -8,13 +8,13 @@ Doku preview
 Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux beschäftigt haben, ioBroker in kürzester Zeit zu installieren!
 
 ioBroker funktioniert auf vielen Linux Distributionen, dennoch wird  ein Debian basiertes Betriebssystem empfohlen.  
-Da ioBroker über Browser oder Terminal administriert wird, wird das Betriebssystem als **Server**, also ***ohne*** Desktop installiert.
+Da ioBroker über Browser oder Terminal administriert wird, sollte das Betriebssystem als **Server**, also ***ohne*** Desktop installiert.
 
 Als Hardware kann ein Raspberry Pi, ein ARM-basierter Einplatinencomputer oder jeder PC genutzt werden.  
 Der Arbeitsspeicher sollte jedoch mindesten 2GB betragen.
 
 Im Prinzip besteht dann **jede** Installation aus einfachen Schritten:
-* Installation eines Betriebssystems und Anpassung
+* Installation eines Betriebssystems und anschließender Anpassung
 * gemeinsame Installation von node.js und ioBroker per Einzeiler
 ---
 **benötigte Software/Hardware**
