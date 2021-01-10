@@ -56,7 +56,7 @@ folgende Komponenten benötigt:
 
 7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Einzeiler  
 `curl -sLf https://iobroker.net/install.sh | bash - `  
- node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
+ sowohl node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
 
 
 ## Installationsablauf ARM-SBC
