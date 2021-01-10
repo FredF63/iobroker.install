@@ -8,10 +8,10 @@ Doku preview
 Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux beschäftigt haben, ioBroker in kürzester Zeit zu installieren!
 
 ioBroker funktioniert auf vielen Linux Distributionen, dennoch wird  ein Debian basiertes Betriebssystem empfohlen.  
-Da ioBroker über Browser oder Terminal administriert wird, sollte das Betriebssystem als **Server**, also ***ohne*** Desktop installiert.
+Da ioBroker über Browser oder Terminal administriert wird, sollte das Betriebssystem als **Server**, also ***ohne*** Desktop installiert werden.
 
-Als Hardware kann ein Raspberry Pi, ein ARM-basierter Einplatinencomputer oder jeder PC genutzt werden.  
-Der Arbeitsspeicher sollte jedoch mindesten 2GB betragen.
+Als Hardware kann ein Raspberry Pi, ein ARM-basierter Einplatinencomputer oder jeder Linux fähige PC genutzt werden.  
+> Der Arbeitsspeicher sollte jedoch mindestens 2GB betragen.
 
 Im Prinzip besteht dann **jede** Installation aus einfachen Schritten:
 * Installation eines Betriebssystems und anschließender Anpassung
@@ -35,8 +35,7 @@ folgende Komponenten benötigt:
 
 2. Beim Raspberry Pi muss nach dem Schreiben der SD-Karte noch auf der Bootpartition eine leere Datei mit Namen `ssh` ohne Dateiendung angelegt werden. Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der Bezeichnung `Boot` eine neue Textdatei anlegen und die Endung `.txt` löschen, auch wenn Windows eine Meldung bringt.
 
-3. Die SD-Karte anschließend in den Pi stecken und den Pi mit dem Netzwerk und der Stromversorgung verbinden.
-Nach kurzer Zeit ist der Pi hoch gefahren und im Netzwerk erreichbar. Im Router nach dessen IP-Adresse suchen und, damit der SBC immer mit der gleichen IP Adresse erreichbar ist, diese dabei direkt an den Pi binden.
+3. Die SD-Karte anschließend in den Pi stecken und den Pi mit dem Netzwerk und der Stromversorgung verbinden. Nach kurzer Zeit ist der Pi hoch gefahren und im Netzwerk erreichbar. Im Router nach dessen IP-Adresse suchen und, damit der SBC immer mit der gleichen IP Adresse erreichbar ist, diese dabei direkt an den Pi binden.
 
 4. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 aufgerufen wird und die Zugangsdaten eingeben werden:
 
