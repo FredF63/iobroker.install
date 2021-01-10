@@ -7,7 +7,8 @@ Doku preview
 
 Diese Anleitung ermöglicht auch Einsteigern, die sich bisher wenig mit Linux beschäftigt haben, ioBroker in kürzester Zeit zu installieren!
 
-ioBroker funktioniert auf vielen Linux Distributionen, dennoch wird empfohlen ein Debian basiertes Betriebssystem, und wichtig: als **Server**, also ***ohne*** Desktop zu installieren.
+ioBroker funktioniert auf vielen Linux Distributionen, dennoch wird  ein Debian basiertes Betriebssystem empfohlen.  
+Da ioBroker über Browser oder Terminal administriert wird das Betriebssystem als **Server**, also ***ohne*** Desktop installiert.
 
 Im Prinzip besteht **jede** Installation aus nur zwei Schritten:
 * Installation eines Betriebssystems
