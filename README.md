@@ -54,9 +54,9 @@ folgende Komponenten benötigt:
 	* **5 Localisation Options:** L2 wählen und die Zeitzone `Europa` und `Berlin` wählen und mit Enter bestätigen
 	* **1 System Options:** S5 Boot / Auto Login mit Enter wählen und B1 Console mit Enter erneut bestätigen.   Mit Tab auf Finish gehen und die Frage nach Reboot mit Ja und Enter bestätigen.
 
-7. Nach dem erneuten einloggen über das Terminalprogramm wird node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker mit dem Einzeiler  
+7. Nach dem erneuten einloggen über das Terminalprogramm wird mit dem Einzeiler  
 `curl -sLf https://iobroker.net/install.sh | bash - `  
- installiert.
+ node.js in der jeweils aktuell empfohlenen Version ***und*** ioBroker installiert.
 
 
 ## Installationsablauf ARM-SBC
