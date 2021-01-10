@@ -19,7 +19,7 @@ Die weitere Verfahrensweise ist anschließend unabhängig von der verwendeten Ha
 
 
 
-## <details open><summary>Raspberry Pi und Einplatinencomputer (kurz SBC)</summary><p>
+## Raspberry Pi und Einplatinencomputer (kurz SBC)
 
 **benötigte Software/Hardware**
 
@@ -77,7 +77,7 @@ Einstellungen vornehmen.
 6. Nach dem erneuten einloggen über das Terminalprogramm node.js und ioBroker mit dem Befehl 
 `curl -sLf https://iobroker.net/install.sh | bash - ` 
 installieren. Es wird die jeweils aktuell empfohlene node.js Version installiert.
-</p></details>
+
 
 ### Installationsablauf ARM-SBC
 sdfasdf
