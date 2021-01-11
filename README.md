@@ -62,6 +62,7 @@ Die erfolgreiche ioBroker Installation endet mit der Information unter welcher I
 
 
 ## Installationsablauf ARM-SBC
+***noch nicht fertig***
 1. Die für die verwendete Hardware passende Version für andere ARM-basierte Einplatinencomputer unter https://www.armbian.com/download/ herunter laden, ***mehr fehlt***
 2. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 aufgerufen wird und die Zugangsdaten eingeben werden:
 
@@ -71,6 +72,7 @@ Die erfolgreiche ioBroker Installation endet mit der Information unter welcher I
     ***Diese Beschreibung fehlt noch***
 
 ## Installationsablauf PC
+***noch nicht fertig***
 1. Das kleine Installations-Image in der 64-Bit Version unter https://www.debian.org/distrib/ herunterladen, entpacken und auf einen Bootfähigen USB-Stick schreiben.
 2. Im BIOS noch 
   * den Boot von USB aktivieren 
