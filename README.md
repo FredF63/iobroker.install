@@ -62,38 +62,23 @@ Die erfolgreiche ioBroker Installation endet mit der Information unter welcher I
 
 
 ## Installationsablauf ARM-SBC
+1. Die für die verwendete Hardware passende Version für andere ARM-basierte Einplatinencomputer unter https://www.armbian.com/download/ herunter laden, ***mehr fehlt***
+2. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 aufgerufen wird und die Zugangsdaten eingeben werden:
 
-* für andere ARM-basierte Einplatinencomputer: https://www.armbian.com/download/
-1. Über das Terminalprogramm zum SBC verbinden, indem die IP des SBC unter Port 22 
-aufgerufen wird und die Zugangsdaten eingeben werden:
+	* ***Das fehlt noch***
 
-	* ARM-SBC: ***Das fehlt noch***
-
-2. Über dem Aufruf `sudo armbian-config` müssen einige Einstellungen vorgenommen werden.bzw.
+3. Über dem Aufruf `sudo armbian-config` müssen einige Einstellungen vorgenommen werden.bzw.
     ***Diese Beschreibung fehlt noch***
 
 ## Installationsablauf PC
-* für einem (mini-) PC: https://www.debian.org/distrib/
-* Das Betriebssystem wird auf einen Bootfähigen USB-Stick geschrieben.
-* Im BIOS wird
-  * der Boot von USB aktiviert 
-  * Auf ein "Legacy-Betriebssystem" umgestellt
-  
-Anschließend vom USB-Stick booten und der geführten Installation folgen.
-
-Auch hier sollte keine grafische Oberfläche installiert werden.
-
-
-4. User anlegen
-Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit `adduser UserName` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
-Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit `exit` ausloggen und eine neue Verbindung als User aufbauen.
-## 
-
-ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
-
+1. Das kleine Installations-Image in der 64-Bit Version unter https://www.debian.org/distrib/ herunterladen, entpacken und auf einen Bootfähigen USB-Stick schreiben.
+2. Im BIOS noch 
+  * den Boot von USB aktivieren 
+  * auf ein "Legacy-Betriebssystem" stellen
+3. Anschließend vom USB-Stick booten und der geführten Installation folgen und ***keine*** grafische Oberfläche installieren.
+4. Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, diesen mit `adduser UserName` (UserName durch den gewünschen Usernamen ersetzen) angelegen und ein Passwort vergeben.  Dem angelegten User noch mit `adduser UserName sudo` noch sudo rechte geben.
+5. `curl` installieren
+6. usw.
+7. ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
 Auf einem neuen System, auf dem sich noch kein node.js befindet wird dieses in der jeweils aktuell empfohlenen Version mit installiert.
 
----
-
-## Nutzung von ioBroker
-Die erfolgreiche Installation endet mit der Information unter welcher IP ioBroker aufgerufen werden soll. Unter IP-ADRESSE:8081 ist die Bedienoberfläche (der Admin) von ioBroker in jedem Browser aufrufbar.
